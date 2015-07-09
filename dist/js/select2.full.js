@@ -4660,7 +4660,7 @@ S2.define('select2/defaults',[
         return matcher(params, match);
       }
 
-      var original = stripDiacritics(data.text).toUpperCase();
+      var original = stripDiacritics(data.title + ' ' + data.text).toUpperCase();
       var term = stripDiacritics(params.term).toUpperCase();
 
       // Check if the text contains the term
